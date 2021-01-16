@@ -148,7 +148,8 @@ void initVariant(void);
 int atexit(void (*func)());
 void setup(void);
 void loop(void);
-long map(long x, long in_min, long in_max, long out_min, long out_max);
+//Workaround: Avoid compile error by being conflicted with std::map()
+//long map(long x, long in_min, long in_max, long out_min, long out_max);
 void yield(void);
 
 #ifdef __cplusplus
